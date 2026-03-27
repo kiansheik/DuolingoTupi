@@ -2,17 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="refresh" content="0; url=https://tama.academiatupi.com" />
   <title>Redirecting...</title>
   <script>
     (function () {
-      var prefix = "/DuolingoTupi";
+      var prefix = "/DuolingoTupi/";
       var path = window.location.pathname || "";
       var tail = "";
-      if (path === prefix || path === prefix + "/") {
+      if (path === "/DuolingoTupi" || path === "/DuolingoTupi/") {
         tail = "";
-      } else if (path.startsWith(prefix + "/")) {
-        tail = path.slice((prefix + "/").length);
+      } else if (path.startsWith(prefix)) {
+        tail = path.slice(prefix.length);
       }
       var target = "https://tama.academiatupi.com";
       if (tail) {
@@ -24,6 +23,6 @@
   </script>
 </head>
 <body>
-  <p>If you are not redirected automatically, <a href="https://tama.academiatupi.com">click here</a>.</p>
+  <p>Not found.</p>
 </body>
 </html>
